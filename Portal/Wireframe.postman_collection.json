@@ -1,0 +1,1704 @@
+{
+	"info": {
+		"_postman_id": "4c3fcd76-5d54-4588-97f5-46bd04e0f00d",
+		"name": "Wireframe",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Akash Agarwal\",\n    \"email\":\"akashagarwal4@yahoo.com\",\n    \"phone\":9810371689,\n    \"college\":\"MIT\",\n    \"regNo\": 190911122,\n    \"password\":\"test@123\",\n    \"password_confirmation\":\"test@123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/register",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Akash Agarwal\",\n    \"email\":\"akashagarwal41200@gmail.com\",\n    \"phone\":9810371689,\n    \"college\":\"MIT\",\n    \"regNo\": 190911122,\n    \"password\":\"test@123\",\n    \"password_confirmation\":\"test@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/register",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "359"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"167-9nbRCX+bgP7bqdw43i2kOqbAgFk\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 14 May 2021 07:07:34 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": {\n        \"message\": \"User Successfully Registered\",\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MDllMjFiNmFiNjJkMTUwMmQ0YzU3YzkiLCJuYW1lIjoiQWthc2ggQWdhcndhbCIsImVtYWlsIjoiYWthc2hhZ2Fyd2FsNDEyMDBAZ21haWwuY29tIiwiaWF0IjoxNjIwOTc2MDU0ODIxLCJleHAiOjE2MjA5NzYyMjc2MjF9.148AAPIfEs_JTAD8nnVH1Ns6yaNHYZ0KnEILdoL1eN8\",\n        \"uid\": \"609e21b6ab62d1502d4c57c9\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"akashagarwal41200@gmail.com\",\n    \"password\":\"test@123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/login",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"akashagarwal41200@gmail.com\",\n    \"password\":\"test@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "347"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"15b-IedLqZjM3c43fDuip2zrKvhdocs\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 14 May 2021 07:11:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MDllMjFiNmFiNjJkMTUwMmQ0YzU3YzkiLCJuYW1lIjoiQWthc2ggQWdhcndhbCIsImVtYWlsIjoiYWthc2hhZ2Fyd2FsNDEyMDBAZ21haWwuY29tIiwiaWF0IjoxNjIwOTc2Mjg1MTg4LCJleHAiOjE2MjA5NzY0NTc5ODh9.fftoP_5Z2NGa_6Zk2JoVMM0meyUwEL4xkQ9OyWf1Esc\",\n    \"message\": \"User Signed in Successfully \",\n    \"uid\": \"609e21b6ab62d1502d4c57c9\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MDllMjFiNmFiNjJkMTUwMmQ0YzU3YzkiLCJuYW1lIjoiQWthc2ggQWdhcndhbCIsImVtYWlsIjoiYWthc2hhZ2Fyd2FsNDEyMDBAZ21haWwuY29tIiwiaWF0IjoxNjIwOTk5MTYyOTQ4LCJleHAiOjE2MjA5OTkzMzU3NDh9.pWXFXI2K2WH-ONhUAfh-MG-WVcSZ549BAlLF68aKgPM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/logout",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/user",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get User Details",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/user",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "424"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1a8-WXWLx8rGJx0P64L4/He/Bpz6vMg\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 14 May 2021 07:15:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": {\n        \"user\": {\n            \"role\": 0,\n            \"confirmed\": true,\n            \"status\": false,\n            \"socketId\": null,\n            \"_id\": \"609e21b6ab62d1502d4c57c9\",\n            \"name\": \"Akash Agarwal\",\n            \"email\": \"akashagarwal41200@gmail.com\",\n            \"phoneNo\": 9810371689,\n            \"college\": \"MIT\",\n            \"regNo\": \"190911122\",\n            \"password\": \"$2a$10$FYjCZob4d8fQ5ufd.E.i8.mdYluJYOKZpSPdTcQe7S4D3wRSg9k.u\",\n            \"participantId\": \"21567\",\n            \"createdAt\": \"2021-05-14T07:07:34.816Z\",\n            \"updatedAt\": \"2021-05-14T07:08:45.624Z\",\n            \"__v\": 0\n        },\n        \"team\": []\n    }\n}"
+				},
+				{
+					"name": "Get User Details (After another user joins the team using invite)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/user",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "742"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2e6-S30p1Th2GFsYjtCCDHvDeigeIiE\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 14 May 2021 07:40:38 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": {\n        \"user\": {\n            \"role\": 0,\n            \"confirmed\": true,\n            \"status\": false,\n            \"socketId\": null,\n            \"_id\": \"609e21b6ab62d1502d4c57c9\",\n            \"name\": \"Akash Agarwal\",\n            \"email\": \"akashagarwal41200@gmail.com\",\n            \"phoneNo\": 9810371689,\n            \"college\": \"MIT\",\n            \"regNo\": \"190911122\",\n            \"password\": \"$2a$10$FYjCZob4d8fQ5ufd.E.i8.mdYluJYOKZpSPdTcQe7S4D3wRSg9k.u\",\n            \"participantId\": \"21567\",\n            \"createdAt\": \"2021-05-14T07:07:34.816Z\",\n            \"updatedAt\": \"2021-05-14T07:08:45.624Z\",\n            \"__v\": 0\n        },\n        \"team\": [\n            {\n                \"participants\": [\n                    \"609e21b6ab62d1502d4c57c9\",\n                    \"609e265a6194365638e5a52f\"\n                ],\n                \"_id\": \"609e25f1b498ca55e01f2a34\",\n                \"createdBy\": \"609e21b6ab62d1502d4c57c9\",\n                \"teamName\": \"test-team\",\n                \"teamDesc\": \"test-desc\",\n                \"submissionId\": \"609e25f1b498ca55e01f2a35\",\n                \"createdAt\": \"2021-05-14T07:25:37.510Z\",\n                \"updatedAt\": \"2021-05-14T07:40:30.278Z\",\n                \"__v\": 0\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create a team",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"teamName\" :\"test-team\",\n    \"teamDesc\":\"test-desc\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/team",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"team"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create a team",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"teamName\" :\"test-team\",\n    \"teamDesc\":\"test-desc\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/team",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"team"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "312"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"138-l7TvU+naSjjLt8KGiG9zRQ6jgxA\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 14 May 2021 07:25:37 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": {\n        \"team\": {\n            \"participants\": [\n                \"609e21b6ab62d1502d4c57c9\"\n            ],\n            \"_id\": \"609e25f1b498ca55e01f2a34\",\n            \"createdBy\": \"609e21b6ab62d1502d4c57c9\",\n            \"teamName\": \"test-team\",\n            \"teamDesc\": \"test-desc\",\n            \"submissionId\": \"609e25f1b498ca55e01f2a35\",\n            \"createdAt\": \"2021-05-14T07:25:37.510Z\",\n            \"updatedAt\": \"2021-05-14T07:25:37.510Z\",\n            \"__v\": 0\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Invite a user to a team",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"participantId\": \"42066\",\n    \"teamId\":\"609e25f1b498ca55e01f2a34\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/team/invite",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"team",
+						"invite"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Invite a user to a team",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"participantId\": \"42066\",\n    \"teamId\":\"609e25f1b498ca55e01f2a34\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/team/invite",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"team",
+								"invite"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "42"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2a-AHKYf0kONDdCAxN45XvpFUkBmxI\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 14 May 2021 07:35:56 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Invitation sent successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Fetch user team",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/team",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"team"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Fetch user team",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/team",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"team"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "560"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"230-Swb/pw96aA1TO23QgA1OWwRxRew\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 14 May 2021 07:43:27 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": {\n        \"participants\": [\n            \"609e21b6ab62d1502d4c57c9\",\n            \"609e265a6194365638e5a52f\"\n        ],\n        \"_id\": \"609e25f1b498ca55e01f2a34\",\n        \"createdBy\": \"609e21b6ab62d1502d4c57c9\",\n        \"teamName\": \"test-team\",\n        \"teamDesc\": \"test-desc\",\n        \"submissionId\": {\n            \"isSubmitted\": false,\n            \"appName\": \"\",\n            \"description\": \"\",\n            \"github\": null,\n            \"submitTimestamp\": null,\n            \"_id\": \"609e25f1b498ca55e01f2a35\",\n            \"teamId\": \"609e25f1b498ca55e01f2a34\",\n            \"attachments\": [],\n            \"createdAt\": \"2021-05-14T07:25:37.518Z\",\n            \"updatedAt\": \"2021-05-14T07:25:37.518Z\",\n            \"__v\": 0\n        },\n        \"createdAt\": \"2021-05-14T07:25:37.510Z\",\n        \"updatedAt\": \"2021-05-14T07:40:30.278Z\",\n        \"__v\": 0\n    }\n}"
+				},
+				{
+					"name": "Fetch user team (After deleting the team)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/team",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"team"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "12"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c-6aLqYoy5q/b0ZJ3nvuqdB0nqjMM\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 14 May 2021 07:49:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "Remove team member",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"member\":\"609e265a6194365638e5a52f\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/team/member?teamId=609e25f1b498ca55e01f2a34",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"team",
+						"member"
+					],
+					"query": [
+						{
+							"key": "teamId",
+							"value": "609e25f1b498ca55e01f2a34"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Remove team member",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"member\":\"609e265a6194365638e5a52f\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/team/member?teamId=609e25f1b498ca55e01f2a34",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"team",
+								"member"
+							],
+							"query": [
+								{
+									"key": "teamId",
+									"value": "609e25f1b498ca55e01f2a34"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "338"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"152-0+Gd/lTM9TKrwMJAJIKgRfaW9iE\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 14 May 2021 07:47:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User removed successfully\",\n    \"team\": {\n        \"participants\": [\n            \"609e21b6ab62d1502d4c57c9\"\n        ],\n        \"_id\": \"609e25f1b498ca55e01f2a34\",\n        \"createdBy\": \"609e21b6ab62d1502d4c57c9\",\n        \"teamName\": \"test-team\",\n        \"teamDesc\": \"test-desc\",\n        \"submissionId\": \"609e25f1b498ca55e01f2a35\",\n        \"createdAt\": \"2021-05-14T07:25:37.510Z\",\n        \"updatedAt\": \"2021-05-14T07:47:08.017Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Team",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/team?teamId=609e25f1b498ca55e01f2a34",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"team"
+					],
+					"query": [
+						{
+							"key": "teamId",
+							"value": "609e25f1b498ca55e01f2a34"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Team",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/team?teamId=609e25f1b498ca55e01f2a34",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"team"
+							],
+							"query": [
+								{
+									"key": "teamId",
+									"value": "609e25f1b498ca55e01f2a34"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "35"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"23-R6GFDxAf96Uj2ivuJfnAhegS9Gg\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 14 May 2021 07:49:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Deleted team successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Create a submission draft",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "appName",
+							"value": "test App",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "testing",
+							"type": "text"
+						},
+						{
+							"key": "github",
+							"value": "https://github.com",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "Web",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": [
+								"/home/akash/Pictures/code.jpeg",
+								"/home/akash/Pictures/cody.png"
+							]
+						},
+						{
+							"key": "isSubmitted",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/submission?teamId=609e2c986de0055f0cfe6dda",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"submission"
+					],
+					"query": [
+						{
+							"key": "teamId",
+							"value": "609e2c986de0055f0cfe6dda"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create a submission draft",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "appName",
+									"value": "test App",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "testing",
+									"type": "text"
+								},
+								{
+									"key": "github",
+									"value": "https://github.com",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "Web",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": [
+										"/home/akash/Pictures/code.jpeg",
+										"/home/akash/Pictures/cody.png"
+									]
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/submission?teamId=609e2c986de0055f0cfe6dda",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"submission"
+							],
+							"query": [
+								{
+									"key": "teamId",
+									"value": "609e2c986de0055f0cfe6dda"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "802"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"322-u8Lz6ZmQ6MCGhUGMtZFEW/goWpo\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 14 May 2021 08:13:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": {\n        \"isSubmitted\": null,\n        \"appName\": \"test App\",\n        \"description\": \"testing\",\n        \"github\": \"https://github.com\",\n        \"submitTimestamp\": null,\n        \"_id\": \"609e2c986de0055f0cfe6ddb\",\n        \"teamId\": \"609e2c986de0055f0cfe6dda\",\n        \"attachments\": [\n            {\n                \"_id\": \"609e313e720aa56a25849377\",\n                \"fileName\": \"code.jpeg\",\n                \"url\": \"https://aether-test.s3.amazonaws.com/teams/609e2c986de0055f0cfe6dda/0.5312343402853323code.jpeg\",\n                \"type\": \"jpeg\",\n                \"key\": \"teams/609e2c986de0055f0cfe6dda/0.5312343402853323code.jpeg\"\n            },\n            {\n                \"_id\": \"609e313e720aa56a25849378\",\n                \"fileName\": \"cody.png\",\n                \"url\": \"https://aether-test.s3.amazonaws.com/teams/609e2c986de0055f0cfe6dda/0.38582628971540966cody.png\",\n                \"type\": \"png\",\n                \"key\": \"teams/609e2c986de0055f0cfe6dda/0.38582628971540966cody.png\"\n            }\n        ],\n        \"createdAt\": \"2021-05-14T07:54:00.110Z\",\n        \"updatedAt\": \"2021-05-14T08:13:50.459Z\",\n        \"__v\": 0,\n        \"category\": \"Web\"\n    }\n}"
+				},
+				{
+					"name": "Create a submission submission",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "appName",
+									"value": "test App",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "testing",
+									"type": "text"
+								},
+								{
+									"key": "github",
+									"value": "https://github.com",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "Web",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": [
+										"/home/akash/Pictures/code.jpeg",
+										"/home/akash/Pictures/cody.png"
+									]
+								},
+								{
+									"key": "isSubmitted",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/submission?teamId=609e2c986de0055f0cfe6dda",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"submission"
+							],
+							"query": [
+								{
+									"key": "teamId",
+									"value": "609e2c986de0055f0cfe6dda"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "822"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"336-Nj6DkNxcvNh2R6Ddtq7OoOrnHKc\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 14 May 2021 08:17:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": {\n        \"isSubmitted\": true,\n        \"appName\": \"test App\",\n        \"description\": \"testing\",\n        \"github\": \"https://github.com\",\n        \"submitTimestamp\": \"2021-05-14T08:17:54.560Z\",\n        \"_id\": \"609e2c986de0055f0cfe6ddb\",\n        \"teamId\": \"609e2c986de0055f0cfe6dda\",\n        \"attachments\": [\n            {\n                \"_id\": \"609e3232720aa56a2584937f\",\n                \"fileName\": \"code.jpeg\",\n                \"url\": \"https://aether-test.s3.amazonaws.com/teams/609e2c986de0055f0cfe6dda/0.9806748668453931code.jpeg\",\n                \"type\": \"jpeg\",\n                \"key\": \"teams/609e2c986de0055f0cfe6dda/0.9806748668453931code.jpeg\"\n            },\n            {\n                \"_id\": \"609e3232720aa56a25849380\",\n                \"fileName\": \"cody.png\",\n                \"url\": \"https://aether-test.s3.amazonaws.com/teams/609e2c986de0055f0cfe6dda/0.9337771133735102cody.png\",\n                \"type\": \"png\",\n                \"key\": \"teams/609e2c986de0055f0cfe6dda/0.9337771133735102cody.png\"\n            }\n        ],\n        \"createdAt\": \"2021-05-14T07:54:00.110Z\",\n        \"updatedAt\": \"2021-05-14T08:17:54.561Z\",\n        \"__v\": 0,\n        \"category\": \"Web\"\n    }\n}"
+				},
+				{
+					"name": "Create a submission draft without file",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "appName",
+									"value": "test App",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "testing",
+									"type": "text"
+								},
+								{
+									"key": "github",
+									"value": "https://github.com",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "Web",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/submission?teamId=609e2c986de0055f0cfe6dda",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"submission"
+							],
+							"query": [
+								{
+									"key": "teamId",
+									"value": "609e2c986de0055f0cfe6dda"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "321"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"141-sgMxRBTi2m/LLGXtXRK60dJF/+M\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 14 May 2021 08:03:11 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": {\n        \"isSubmitted\": null,\n        \"appName\": \"test App\",\n        \"description\": \"testing\",\n        \"github\": \"https://github.com\",\n        \"submitTimestamp\": null,\n        \"_id\": \"609e2c986de0055f0cfe6ddb\",\n        \"teamId\": \"609e2c986de0055f0cfe6dda\",\n        \"attachments\": null,\n        \"createdAt\": \"2021-05-14T07:54:00.110Z\",\n        \"updatedAt\": \"2021-05-14T08:03:11.581Z\",\n        \"__v\": 0,\n        \"category\": \"Web\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Resend Verification mail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"akashagarwal4@yahoo.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/resend",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"resend"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Resend Verification mail",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"akashagarwal4@yahoo.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/resend",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"resend"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "356"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"164-Qy7GWRcWr44cyLTAhdVNEM+sMQ8\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 14 May 2021 13:38:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": {\n        \"message\": \"Confirmation sent successfully\",\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MDllN2QzODkxMTBiY2EyYTc3N2JjYjQiLCJuYW1lIjoiQWthc2ggQWdhcndhbCIsImVtYWlsIjoiYWthc2hhZ2Fyd2FsNEB5YWhvby5jb20iLCJpYXQiOjE2MjA5OTk0OTY2NDUsImV4cCI6MTYyMDk5OTY2OTQ0NX0.arN55-t2NNhKL8wczhf2Jz83jGHl3REnfY-NMD6mDV0\",\n        \"uid\": \"609e7d389110bca2a777bcb4\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Send password reset link",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"akashagarwal4@yahoo.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/password-reset",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"password-reset"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Resend Verification mail",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"akashagarwal4@yahoo.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/resend",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"resend"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "356"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"164-Qy7GWRcWr44cyLTAhdVNEM+sMQ8\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 14 May 2021 13:38:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": {\n        \"message\": \"Confirmation sent successfully\",\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MDllN2QzODkxMTBiY2EyYTc3N2JjYjQiLCJuYW1lIjoiQWthc2ggQWdhcndhbCIsImVtYWlsIjoiYWthc2hhZ2Fyd2FsNEB5YWhvby5jb20iLCJpYXQiOjE2MjA5OTk0OTY2NDUsImV4cCI6MTYyMDk5OTY2OTQ0NX0.arN55-t2NNhKL8wczhf2Jz83jGHl3REnfY-NMD6mDV0\",\n        \"uid\": \"609e7d389110bca2a777bcb4\"\n    }\n}"
+				},
+				{
+					"name": "Send password reset link",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"akashagarwal4@yahoo.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/password-reset",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"password-reset"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "366"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"16e-qGa06milfSKg7BtinRlGuTWy54w\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 14 May 2021 13:41:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": {\n        \"message\": \"Link to reset password sent successfully\",\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MDllN2QzODkxMTBiY2EyYTc3N2JjYjQiLCJuYW1lIjoiQWthc2ggQWdhcndhbCIsImVtYWlsIjoiYWthc2hhZ2Fyd2FsNEB5YWhvby5jb20iLCJpYXQiOjE2MjA5OTk3MTc0NjksImV4cCI6MTYyMDk5OTg5MDI2OX0.Yt3VayzMOwct8q5UMBa5nUVfAK1qEbEqImzIQ_aFC40\",\n        \"uid\": \"609e7d389110bca2a777bcb4\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Reset password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"password\": \"#test@123\",\n    \"password_confirmation\":\"#test@123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MDllN2QzODkxMTBiY2EyYTc3N2JjYjQiLCJuYW1lIjoiQWthc2ggQWdhcndhbCIsImVtYWlsIjoiYWthc2hhZ2Fyd2FsNEB5YWhvby5jb20iLCJpYXQiOjE2MjA5OTk3MTc0NjksImV4cCI6MTYyMDk5OTg5MDI2OX0.Yt3VayzMOwct8q5UMBa5nUVfAK1qEbEqImzIQ_aFC40",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"reset-password",
+						"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MDllN2QzODkxMTBiY2EyYTc3N2JjYjQiLCJuYW1lIjoiQWthc2ggQWdhcndhbCIsImVtYWlsIjoiYWthc2hhZ2Fyd2FsNEB5YWhvby5jb20iLCJpYXQiOjE2MjA5OTk3MTc0NjksImV4cCI6MTYyMDk5OTg5MDI2OX0.Yt3VayzMOwct8q5UMBa5nUVfAK1qEbEqImzIQ_aFC40"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Reset password",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"password\": \"#test@123\",\n    \"password_confirmation\":\"#test@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MDllN2QzODkxMTBiY2EyYTc3N2JjYjQiLCJuYW1lIjoiQWthc2ggQWdhcndhbCIsImVtYWlsIjoiYWthc2hhZ2Fyd2FsNEB5YWhvby5jb20iLCJpYXQiOjE2MjA5OTk3MTc0NjksImV4cCI6MTYyMDk5OTg5MDI2OX0.Yt3VayzMOwct8q5UMBa5nUVfAK1qEbEqImzIQ_aFC40",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"reset-password",
+								"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MDllN2QzODkxMTBiY2EyYTc3N2JjYjQiLCJuYW1lIjoiQWthc2ggQWdhcndhbCIsImVtYWlsIjoiYWthc2hhZ2Fyd2FsNEB5YWhvby5jb20iLCJpYXQiOjE2MjA5OTk3MTc0NjksImV4cCI6MTYyMDk5OTg5MDI2OX0.Yt3VayzMOwct8q5UMBa5nUVfAK1qEbEqImzIQ_aFC40"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "43"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2b-BcqZXnJsIxPWaT5KqbeKFU83Xws\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 14 May 2021 13:45:14 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Password changed successfully\"\n}"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MDllMjFiNmFiNjJkMTUwMmQ0YzU3YzkiLCJuYW1lIjoiQWthc2ggQWdhcndhbCIsImVtYWlsIjoiYWthc2hhZ2Fyd2FsNDEyMDBAZ21haWwuY29tIiwiaWF0IjoxNjIwOTc2Mjg1MTg4LCJleHAiOjE2MjA5NzY0NTc5ODh9.fftoP_5Z2NGa_6Zk2JoVMM0meyUwEL4xkQ9OyWf1Esc",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:8000"
+		}
+	]
+}
